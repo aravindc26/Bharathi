@@ -67,6 +67,7 @@ public class AssetInstaller {
 			Zip _zip = new Zip(zipFile);
 			_zip.unzip(extractPath);
 			_zip.close();
+			file.delete();
 		} catch (IOException ie) {
 			Log.e(TAG, "failed extraction", ie);
 		}
