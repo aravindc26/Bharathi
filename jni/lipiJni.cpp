@@ -37,7 +37,7 @@ void JNICALL Java_com_canvas_LipiTKJNIInterface_initializeNative(JNIEnv *env, jo
 
 	string projectStr = string((char*)env->GetStringUTFChars(lipiProject, NULL));
 
-	LTKLipiEngineInterface* lipiEngine = createLTKLipiEngine();
+	 lipiEngine = createLTKLipiEngine();
 
 	lipiEngine->setLipiRootPath(lipitkLocation);
 
